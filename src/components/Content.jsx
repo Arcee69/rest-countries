@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import SinglePage from './page/SinglePage';
 
 const Content = ({ data, mode }) => {
   return (
@@ -27,7 +26,6 @@ const Content = ({ data, mode }) => {
                 ))}
             </ul>    
         </div>
-        {/* <SinglePage data={data} /> */}
     </> 
   )
 }

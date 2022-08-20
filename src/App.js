@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 import axios from 'axios';
 import Search from './components/Search';
-import Button from './components/Button';
 import Content from './components/Content';
-import SinglePage from './components/page/SinglePage';
 
 function App() {
   const [data, setData] = useState([]);
@@ -41,7 +39,7 @@ function App() {
 
   useEffect(() => {
     fetchApiByName();
-  },[text])
+  }, [text])
 
   return (
     <div className={mode === true ? "bg-slate-700 w-full h-screen overflow-x-hidden" : "bg-white overflow-x-hidden h-screen w-full" }>

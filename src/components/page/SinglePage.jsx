@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate, useLocation } from 'react-router-dom';
 
-const SinglePage = ({ }) => {
+const SinglePage = () => {
     const [mode, setMode] = useState(false);
 
 
