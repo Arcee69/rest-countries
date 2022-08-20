@@ -1,3 +1,9 @@
+@import url('https://fonts.google.com/specimen/Nunito+Sans');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: "Nunito Sans";
+}
