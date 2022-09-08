@@ -17,6 +17,10 @@ function App() {
       setText(e.target.value);
   };
 
+  const handleChange = (e) => {
+    setText(e.target.value);
+};
+
   const findRegion = (e) => {
     setRegion(e.target.value)
   };
@@ -42,7 +46,7 @@ function App() {
   }, [text])
 
   return (
-    <div className={mode === true ? "bg-slate-700 w-full h-screen overflow-x-hidden" : "bg-white overflow-x-hidden h-screen w-full" }>
+    <div className={mode === true ? "bg-slate-700 w-full h-screen overflow-y-auto overflow-x-hidden" : "bg-white overflow-x-hidden h-screen w-full" }>
       <div className=' xs:mx-5 sm:mx-10 h-14 flex flex-row items-center justify-between'>
           <div className={mode === true ? "text-white font-semibold text-sm" : "text-black font-semibold text-sm"} >
               Where in the world?
@@ -55,7 +59,7 @@ function App() {
 
       <hr />
 
-      <Search handleSearch={handleSearch} findRegion={findRegion} />
+      <Search handleSearch={handleSearch} findRegion={findRegion} handleChange={handleChange} />
       <Content data={data} mode={mode} />
       
     </div>

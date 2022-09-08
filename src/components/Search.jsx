@@ -1,7 +1,7 @@
 import React from 'react';
 import Select from "./Select";
 
-const Search = ( { handleSearch, findRegion }) => {
+const Search = ( { handleSearch, handleChange, findRegion }) => {
 
   const continent = [
     {value:'', label:'Filter by Region', disabled: true},
@@ -14,9 +14,11 @@ const Search = ( { handleSearch, findRegion }) => {
 
   return (
     <div className=' mt-5 xs:mx-5 sm:mx-10  flex flex-row justify-between'>
-        <div className='' onClick={handleSearch}>
+        <div className=''> 
             <input 
               type="text" 
+              // value={text} //onClick={handleSearch}
+              onChange={handleChange}
               placeholder='Search for a country...' 
               className='p-1.5 xs:w-40 sm:w-96  text-black' 
               style={{ border: "1px solid black"}}

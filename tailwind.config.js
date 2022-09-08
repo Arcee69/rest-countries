@@ -13,7 +13,7 @@ module.exports = {
       ...defaultTheme.screens,
     },
 
-    color: {
+    colors: {
       BACKGROUND_DARK: "#202c37",
       BACKGROUND_DARK_ELEMENT: 	"#2b3945",
       BACKGROUND_LIGHT: "#fafafa",
