@@ -51,7 +51,7 @@ function App() {
           <div className={mode === true ? "text-white font-semibold text-sm" : "text-black font-semibold text-sm"} >
               Where in the world?
           </div>
-          <button className={mode === true ? "text-white font-semibold text-sm" : "text-black font-semibold text-sm"} onClick={handleToggle}>
+          <button className={`${mode === true ? "text-white" : "text-black "} font-semibold text-sm`} onClick={handleToggle}>
             {mode === true ? <FontAwesomeIcon icon={faMoon}/>  : <FontAwesomeIcon icon={faSun} />} 
             {mode === true ? " Dark Mode" : " Light Mode" }
           </button>  

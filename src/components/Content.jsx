@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 const Content = ({ data, mode }) => {
   return (
      <>     
-        <div className='w-full mx-10 rounded-lg overflow-x-hidden mt-5'>
-            <ul className='grid grid-cols-4 gap-5 mb-3' >
+        <div className='w-full xs:mx-5 sm:mx-10 rounded-lg overflow-x-hidden mt-5'>
+            <ul className='grid xs:grid-cols-1 sm:grid-cols-4 gap-5 mb-3' >
                 {data.map((datas) => (
-                    <li key={datas.population} className="xs:w-5/6 xs:mb-4 sm:mw-4/6 h-6/6 shadow-2xl rounded-lg">
+                    <li key={datas.population} className="xs:w-6/6 xs:mb-4 sm:mw-4/6 h-6/6 shadow-2xl rounded-lg">
                         <Link to={`/${datas.altSpellings}`} state={ datas}>
                             <img src={datas.flags.png} alt='images' className='w-full h-3/6 cursor-pointer '/>
                         </Link>
